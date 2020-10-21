@@ -9,7 +9,10 @@ function Article({ article }) {
       <p>{article.source}</p>
       <p>{article.author}</p>
       <p>{article.content}</p>
-      <a href={article.url}>Read More</a>
+      <a href={article.url}>
+        <img src={article.imageUrl} alt={article.name} />
+      </a>
+      <p>click above to see more</p>
     </li>
   );
 }
@@ -20,6 +23,7 @@ Article.propTypes = {
     title: PropTypes.string,
     author: PropTypes.string,
     content: PropTypes.string,
+    imageUrl: PropTypes.string,
     url: PropTypes.string
   }).isRequired
 };
