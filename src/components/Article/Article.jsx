@@ -5,9 +5,11 @@ import styles from './Article.css';
 function Article({ article }) {
   return (
     <li className={styles.Article}>
-      <h1 data-testid="article">{article.title}</h1>
-      <p>{article.source}</p>
-      <p>{article.author}</p>
+      <div>
+        <h1 data-testid="article">{article.title}</h1>
+        <p>{article.source}</p>
+        <p>{article.author}</p>
+      </div>
       <p>{article.content}</p>
       <a href={article.url}>
         <img src={article.imageUrl} alt={article.title} />
