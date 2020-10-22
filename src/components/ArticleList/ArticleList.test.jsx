@@ -10,6 +10,7 @@ import ArticleList from './ArticleList';
 
 describe('test the ArticleList component', () => {
   afterEach(() => cleanup());
+
   it('should render a list of articles', () => {
     const articles = [
       {
@@ -38,10 +39,12 @@ describe('test the ArticleList component', () => {
       }
     ];
 
-    render(<ArticleList articles={articles} />);
+    const { asFragment } = render(<ArticleList articles={articles} />);
 
     const allArticleTitles = screen.getAllByText('some true stuff');
 
     expect(allArticleTitles.length).toEqual(3);
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });

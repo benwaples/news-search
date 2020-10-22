@@ -20,9 +20,11 @@ describe('Article component testing', () => {
       url: 'google.com',
   
     };
-    render(<Article article={article} />);
+    const { asFragment } = render(<Article article={article} />);
 
     screen.getByText('test title');
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });
 
