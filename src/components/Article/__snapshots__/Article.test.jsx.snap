@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article component testing renders one article 1`] = `
+<DocumentFragment>
+  <li
+    class="Article"
+  >
+    <h1
+      data-testid="article"
+    >
+      test title
+    </h1>
+    <p>
+      article source
+    </p>
+    <p>
+      fake af author
+    </p>
+    <p>
+      some true stuff
+    </p>
+    <a
+      href="google.com"
+    >
+      <img
+        alt="test title"
+        src="https://fakeplaceholder.image.url.you/couldnt"
+      />
+    </a>
+    <p>
+      click above to see more
+    </p>
+  </li>
+</DocumentFragment>
+`;

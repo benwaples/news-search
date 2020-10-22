@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test the ArticleList component should render a list of articles 1`] = `
+<DocumentFragment>
+  <div
+    id="articleList"
+  >
+    <ul>
+      <li
+        class="Article"
+      >
+        <h1
+          data-testid="article"
+        >
+          test title3
+        </h1>
+        <p>
+          article source
+        </p>
+        <p>
+          fake af author
+        </p>
+        <p>
+          some true stuff
+        </p>
+        <a
+          href="google.com"
+        >
+          <img
+            alt="test title3"
+            src="https://fakeplaceholder.image.url.you/couldnt"
+          />
+        </a>
+        <p>
+          click above to see more
+        </p>
+      </li>
+      <li
+        class="Article"
+      >
+        <h1
+          data-testid="article"
+        >
+          test title2
+        </h1>
+        <p>
+          article source
+        </p>
+        <p>
+          fake af author
+        </p>
+        <p>
+          some true stuff
+        </p>
+        <a
+          href="google.com"
+        >
+          <img
+            alt="test title2"
+            src="https://fakeplaceholder.image.url.you/couldnt"
+          />
+        </a>
+        <p>
+          click above to see more
+        </p>
+      </li>
+      <li
+        class="Article"
+      >
+        <h1
+          data-testid="article"
+        >
+          test title1
+        </h1>
+        <p>
+          article source
+        </p>
+        <p>
+          fake af author
+        </p>
+        <p>
+          some true stuff
+        </p>
+        <a
+          href="google.com"
+        >
+          <img
+            alt="test title1"
+            src="https://fakeplaceholder.image.url.you/couldnt"
+          />
+        </a>
+        <p>
+          click above to see more
+        </p>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

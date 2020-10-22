@@ -5,8 +5,9 @@ import Article from '../Article/Article';
 
 function ArticleList({ articles }) {
   const ArticleElements = articles.map(article => (
-    <Article key={article.name} article={article}/>
+    <Article key={article.title} article={article}/>
   ));
+
   return (
     <div id={styles.articleList}>
       <ul>

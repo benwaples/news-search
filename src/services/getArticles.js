@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-export default function getArticles(searchTerm) {
+export const getArticles = (searchTerm) => {
   return fetch(`https://newsapi.org/v2/everything?q=${searchTerm}&apiKey=${process.env.NEWS_API_KEY}`)
     .then(res => res.json())
     .then(json => json.articles.map(article => ({
@@ -11,4 +11,4 @@ export default function getArticles(searchTerm) {
       url: article.url
     })))
     .then(console.log());
-}
+};

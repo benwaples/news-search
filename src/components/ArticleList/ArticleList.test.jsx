@@ -6,23 +6,13 @@ import {
   screen, 
   waitFor 
 } from '@testing-library/react';
-import { getArticles } from '../services/getArticles';
-import NewsSearch from './NewsSearch';
+import ArticleList from './ArticleList';
 
+describe('test the ArticleList component', () => {
+  afterEach(() => cleanup());
 
-jest.mock('../services/getArticles');
-
-describe('NewsSearch container', () => {
-  it('should a search bar with a button to search', () => {
-    
-    render(<NewsSearch />);
-
-    screen.getByText('Click me');
-
-  });
-
-  it('should display a list of articles', async() => {
-    getArticles.mockResolvedValue([
+  it('should render a list of articles', () => {
+    const articles = [
       {
         source: 'article source',
         title: 'test title3',
@@ -47,17 +37,14 @@ describe('NewsSearch container', () => {
         imageUrl: 'https://fakeplaceholder.image.url.you/couldnt',
         url: 'google.com',
       }
-    ]);
-    render(<NewsSearch />);
+    ];
 
-    
-    fireEvent.click(screen.getByText('Click me'));
-    
-    setTimeout(() => {
-      const articleList = screen.getAllByTestId('article');
-      return expect(articleList).not.toBeEmptyDOMElement();
-    }, 3000);
-    
+    const { asFragment } = render(<ArticleList articles={articles} />);
+
+    const allArticleTitles = screen.getAllByText('some true stuff');
+
+    expect(allArticleTitles.length).toEqual(3);
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });
-
