@@ -9,17 +9,19 @@ exports[`test the ArticleList component should render a list of articles 1`] = `
       <li
         class="Article"
       >
-        <h1
-          data-testid="article"
-        >
-          test title3
-        </h1>
-        <p>
-          article source
-        </p>
-        <p>
-          fake af author
-        </p>
+        <div>
+          <h1
+            data-testid="article"
+          >
+            test title3
+          </h1>
+          <p>
+            article source
+          </p>
+          <p>
+            fake af author
+          </p>
+        </div>
         <p>
           some true stuff
         </p>
@@ -38,17 +40,19 @@ exports[`test the ArticleList component should render a list of articles 1`] = `
       <li
         class="Article"
       >
-        <h1
-          data-testid="article"
-        >
-          test title2
-        </h1>
-        <p>
-          article source
-        </p>
-        <p>
-          fake af author
-        </p>
+        <div>
+          <h1
+            data-testid="article"
+          >
+            test title2
+          </h1>
+          <p>
+            article source
+          </p>
+          <p>
+            fake af author
+          </p>
+        </div>
         <p>
           some true stuff
         </p>
@@ -67,17 +71,19 @@ exports[`test the ArticleList component should render a list of articles 1`] = `
       <li
         class="Article"
       >
-        <h1
-          data-testid="article"
-        >
-          test title1
-        </h1>
-        <p>
-          article source
-        </p>
-        <p>
-          fake af author
-        </p>
+        <div>
+          <h1
+            data-testid="article"
+          >
+            test title1
+          </h1>
+          <p>
+            article source
+          </p>
+          <p>
+            fake af author
+          </p>
+        </div>
         <p>
           some true stuff
         </p>

@@ -5,17 +5,19 @@ exports[`Article component testing renders one article 1`] = `
   <li
     class="Article"
   >
-    <h1
-      data-testid="article"
-    >
-      test title
-    </h1>
-    <p>
-      article source
-    </p>
-    <p>
-      fake af author
-    </p>
+    <div>
+      <h1
+        data-testid="article"
+      >
+        test title
+      </h1>
+      <p>
+        article source
+      </p>
+      <p>
+        fake af author
+      </p>
+    </div>
     <p>
       some true stuff
     </p>

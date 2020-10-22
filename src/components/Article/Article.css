@@ -20,4 +20,18 @@
     transform: scale(1.09);
   }
 
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    h1{
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
 }
